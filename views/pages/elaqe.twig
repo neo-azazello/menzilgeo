@@ -1,0 +1,84 @@
+{% extends 'index.twig' %}
+{% block pagetitle %} Əlaqə vasitələrimiz{% endblock %}
+{% block content %}
+    <div id="Wrapper">
+        <div id="Content">
+            <div class="container contact-container">
+
+                <div class="column one">
+                    <div class="mapouter">
+                        <div class="gmap_canvas">
+                            <iframe width="1200" height="500" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=40.407857%2C%2049.845468&t=&z=19&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <style>.mapouter {
+                                position: relative;
+                                text-align: right;
+                                height: 500px;
+                                width: 100%;
+                            }
+
+                            .gmap_canvas {
+                                overflow: hidden;
+                                background: none !important;
+                                height: 500px;
+                                width: 100%;
+                            }</style>
+                    </div>
+                </div>
+
+                <div class="column one-third">
+                    <div class="get_in_touch inner-padding"><h3>KOORDİNATLAR</h3>
+                        <ul>
+                            <li class="address">
+                                <i class="icon-map-marker"></i>
+                                <p>AZ1069, Bakı şəhəri, Nərimanov rayonu, İbrahimpaşa Dadaşov 62A</p>
+                            </li>
+                            <li class="phone">
+                                <i class="icon-phone"></i>
+                                <p>050 2118365 və 012 5611437 </p></li>
+                            <li class="mail"><i class="icon-envelope"></i>
+                                <p>
+                                    <a href="mailto:info@menzilgeo.az, 000-2011-00@mail.ru">info@menzilgeo.az,
+                                        000-2011-00@mail.ru</a></p></li>
+                            <li class="www">
+                                <i class="icon-globe"></i>
+                                <p><a href="http://www.menzilgeo.az/">www.menzilgeo.az</a>
+                                </p></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="column two-third">
+                    <div class="inner-padding"><h3>BİZƏ YAZIN</h3>
+                        <div class="contact_form">
+                            <form id="json_contact_form" method="POST" action="">
+                                <input type="hidden" name="mfn_contact_nonce" value="96c2177643">
+                                <input type="hidden" name="To" value="000-2011-00@mail.ru">
+                                <fieldset>
+                                    <input id="Name" class="nick required" name="Name" placeholder="Adınız"
+                                           type="text">
+                                    <input id="Email" class="email required" name="Email"
+                                           placeholder="E-poçtunuz" type="text">
+                                    <input
+                                            id="Subject" class="subject" name="Subject" placeholder="Mövzu" type="text">
+                                    <textarea
+                                            id="Message" name="Message" class="required"></textarea>
+                                    <input type="submit" value="Göndər">
+                                </fieldset>
+                            </form>
+                            <div class="alert_success" style="display:none;">Təşəkkür edirik. Məktubunuz göndərildi
+                            </div>
+                            <div class="alert_error" style="display:none;">Məktubunuz göndərilmədi. Xahiş edirik bir
+                                daha yoxlayın
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+
+
+    </div>
+{% endblock %}

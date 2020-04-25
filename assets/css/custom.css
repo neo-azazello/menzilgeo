@@ -1,0 +1,35 @@
+/* If you want to add your own CSS code, please do it in this file */
+#Subheader {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.the_content, .content-padding {
+    border-radius: 0 0 50px 0;
+}
+
+.widget_mfn_menu, .widget_categories {
+    border-top: 5px solid #FECD39;
+    padding-bottom: 45px;
+    padding-top: 30px;
+}
+
+.get_in_touch {
+    background-color: #FECD39;
+}
+
+#Top_bar .social li a {
+    background: #2C3E50 !important;
+}
+
+#Top_bar .phone i {
+    color: #2C3E50 !important;
+}
+
+#Footer, #Footer .Recent_posts ul li .desc p, #Footer .Recent_comments ul li p.author, #Footer .Twitter ul li > a {
+    border-top: 5px solid #FECD39;
+}
+
+#Footer .copyrights p {
+    color: #FECD39;
+}

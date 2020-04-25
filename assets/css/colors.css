@@ -1,0 +1,469 @@
+/******************* Background ********************/
+html {
+    background: #dfe3e5;
+}
+
+.header-background { background:url("/assets/images/sl2.jpg") no-repeat center top; }
+
+
+/********************** Fonts **********************/
+
+body, button, input[type="submit"], input[type="reset"], input[type="button"],
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+#menu > ul > li > a {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: normal;
+}
+
+h1 {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+h3 {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+h4 {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+h5 {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+h6 {
+    font-family: SourceSansPro-Regular, Arial, Tahoma, sans-serif;
+    font-weight: 300;
+}
+
+
+/********************** Font sizes **********************/
+
+/* Body */
+
+body {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+#menu > ul > li > a {
+    font-size: 16px;
+}
+
+/* Headings */
+
+h1 {
+    font-size: 40px;
+    line-height: 40px;
+}
+
+h2 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+h3 {
+    font-size: 26px;
+    line-height: 28px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 17px;
+    line-height: 22px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+/******************* Fixed heights ********************/
+
+/* 1240px */
+.column-fixed > div { height: 500px; }
+.column-fixed div.inner-padding { height: 460px;}
+.column-fixed .call_to_action .inner-padding { height: 460px; line-height: 460px;}
+
+
+/* 960px */
+@media only screen and (min-width: 960px) and (max-width: 1239px) {
+    .column-fixed > div { height: 330px; }
+    .column-fixed div.inner-padding { height: 290px;}
+    .column-fixed .call_to_action .inner-padding { height: 290px; line-height: 290px;}
+}
+
+/* 768px */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+    .column-fixed > div { height: 330px; }
+    .column-fixed div.inner-padding { height: 290px;}
+    .column-fixed .call_to_action .inner-padding { height: 290px; line-height: 290px;}
+}
+
+
+
+
+/********************** Backgrounds **********************/
+
+.the_content, .content-padding {
+    background: #ffffff;
+}
+
+.Latest_posts {
+    background: #ffffff;
+}
+
+.testimonial {
+    background: #DFE3E5;
+}
+
+#Footer {
+    background-color: #2c3e50;
+}
+
+
+/********************* Colors *********************/
+
+/* Content font */
+body {
+    color: #717e8c;
+}
+
+/* Links color */
+a {
+    color: #2c3e50;
+}
+
+a:hover {
+    color: #192938;
+}
+
+/* Grey notes */
+.Latest_posts ul li .desc p, .Recent_comments ul li p.author, .wp-caption .wp-caption-text, .post .meta span.sep, .post .meta,
+.post .footer p.tags a, .Twitter ul li > a {
+    color: #98a7a8;
+}
+
+/* Strong */
+.Twitter ul li span, .widget_calendar caption, blockquote .author h6,
+.single-portfolio .sp-inside .sp-inside-left dd i {
+    color: #fecd39;
+}
+
+/* Borders */
+.offer-page .offer-right, code, pre, .post, .post .meta, #comments .commentlist > li, #comments .commentlist > li .photo,
+#comments .commentlist li .comment-body, .widget_calendar td, .widget_calendar th, .single-portfolio .sp-inside .sp-inside-left {
+    border-color: #dfe3e5;
+}
+
+/* Buttons */
+a.button, input[type="submit"], input[type="reset"], input[type="button"] {
+    background-color: #dea807;
+    color: #ffffff;
+}
+
+a:hover.button, input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover {
+    background-color: #efb300;
+    color: #ffffff;
+}
+
+/* Headings font */
+h1, h1 a, h1 a:hover { color: #2c3e50; }
+h2, h2 a, h2 a:hover { color: #2c3e50; }
+h3, h3 a, h3 a:hover { color: #2c3e50; }
+h4, h4 a, h4 a:hover { color: #2c3e50; }
+h5, h5 a, h5 a:hover { color: #2c3e50; }
+h6, h6 a, h6 a:hover { color: #2c3e50; }
+
+/* Header */
+
+#Header .sixteen, #Header #menu ul {
+    background: #2c3e50;
+}
+
+#Header #logo {
+    background: #ffffff;
+}
+
+#Top_bar .phone i {
+    color: #bac4c5;
+}
+
+#Top_bar .phone a {
+    color: #34495e;
+}
+
+#Top_bar .social li a {
+    background: #bac4c5;
+    color: #dfe3e5 !important;
+}
+
+#Top_bar .social li a:hover {
+    background: #fecd39;
+    color: #ffffff !important;
+}
+
+/* Subheader */
+#Subheader .sixteen .title {
+    background: #ffffff;
+    color: #2c3e50;
+}
+
+/* Breadcrumbs */
+ul.breadcrumbs li, ul.breadcrumbs li a {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Menu */
+#Header #menu > ul > li > a {
+    color: #ffffff;
+}
+
+#Header #menu > ul > li.current-menu-item > a,
+#Header #menu > ul > li.current_page_item > a,
+#Header #menu > ul > li.current-menu-ancestor > a,
+#Header #menu > ul > li.current_page_ancestor > a {
+    background: #fecd39;
+    color: #2C3E50;
+}
+
+#Header #menu > ul > li > a:hover,
+#Header #menu > ul > li.hover > a {
+    background: #fecd39 !important;
+    color: #2C3E50;
+}
+
+#Header #menu > ul > li ul {
+    background: #fecd39;
+}
+
+#Header #menu > ul > li ul li a {
+    color: #2C3E50;
+    border-color: #ffe186;
+}
+
+#Header #menu > ul > li ul li a:hover,
+#Header #menu > ul > li ul li.hover > a {
+    background: #dea807 !important;
+    color: #ffffff !important;
+}
+
+/* Info Box */
+.info_box {
+    background: #fecd39;
+    color: #ffffff;
+}
+.info_box h4 {
+    color: #ffffff;
+}
+
+/* Captions mask */
+.wp-caption .mask, .da-thumbs li a div,
+.gallery .gallery-item {
+    background-color: rgba(32, 132, 198, 0.8);
+}
+
+/* Portfolio */
+.da-thumbs li a div {
+    background-color: rgba(32, 132, 198, 0.8);
+}
+.Projects_header .categories ul li a:hover, .Projects_header .categories ul li.current-cat a {
+    background: #e5ad05;
+}
+
+/* Get in touch */
+.get_in_touch {
+    background: #DFE3E5;
+}
+
+/* Recent works */
+.recent_works {
+    background: #2c3e50;
+}
+.recent_works .header h3 {
+    color: #ffffff;
+}
+.recent_works .desc {
+    color: #ffe186;
+}
+
+/* Call to action */
+.call_to_action .inner-padding {
+    background-color: rgba(32, 132, 198, 0.85);
+}
+.call_to_action h4 {
+    color: #ffffff;
+}
+.call_to_action h4 span {
+    color: #BAEFF8;
+}
+
+/* Team */
+.team h4 {
+    color: #fecd39;
+}
+
+/* Our clients slider */
+.Our_clients_slider {
+    background: #c9d0d2;
+}
+
+/* Faq & Accordion & Tabs */
+.accordion .question h5,.faq .question h5 {
+    background: #fecd39;
+    color: #ffffff;
+}
+.faq .active h5, .accordion .active h5 {
+    background: #fecd39;
+    color: #ffffff;
+}
+.accordion .answer, .faq .answer {
+    background: #dea807;
+    color: #ffffff;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    background: #bac4c5;
+    color: #2c3e50;
+}
+.ui-tabs .ui-tabs-nav li.ui-state-active a {
+    background: #ffffff;
+    color: #fecd39;
+}
+.ui-tabs .ui-tabs-panel {
+    background: #ffffff;
+    color: #717E8C;
+}
+
+/* Pricing box */
+.pricing-box {
+    border-color: #fecd39;
+    background: #577899;
+}
+
+.pricing-box, .pricing-box h3,
+.pricing-box .plan-header .price sup.period {
+    color: #ffffff;
+}
+
+.pricing-box .plan-header .price {
+    color: #fecd39;
+}
+
+.pricing-box-featured {
+    background: #24609b;
+}
+
+/* Pager */
+.pager a.page {
+    color: #b5bfc0;
+}
+.pager a.active {
+    color: #dea807;
+}
+
+/* Posts */
+.post h3 a, .post .meta a {
+    color: #fecd39;
+}
+
+/* widget_archive  */
+.widget_archive {
+    background: #fecd39;
+}
+.widget_archive h3,
+.widget_archive li a  {
+    color: #ffffff;
+}
+.widget_archive li a:hover {
+    color: #2C3E50;
+}
+
+/* widget_mfn_menu, widget_categories */
+.widget_mfn_menu, .widget_categories {
+    background: #2c3e50;
+}
+.widget_mfn_menu h3, .widget_categories h3,
+.widget_mfn_menu li a, .widget_categories li a {
+    color: #ffffff;
+}
+.widget_mfn_menu li a i.icon-angle-right, .widget_mfn_menu li.current_page_item a, .widget_mfn_menu li a:hover, .widget_categories li a:hover, .widget_categories li.current-cat a {
+    color: #fecd39;
+}
+
+/* Footer headers and text */
+#Footer,
+#Footer .Recent_posts ul li .desc p, #Footer .Recent_comments ul li p.author, #Footer .Twitter ul li > a  {
+    color: #dfe3e5;
+}
+
+#Footer a {
+    color: #fecd39;
+}
+
+#Footer a:hover {
+    color: #ffe186;
+}
+
+#Footer h1, #Footer h1 a, #Footer h1 a:hover,
+#Footer h2, #Footer h2 a, #Footer h2 a:hover,
+#Footer h3, #Footer h3 a, #Footer h3 a:hover,
+#Footer h4, #Footer h4 a, #Footer h4 a:hover,
+#Footer h5, #Footer h5 a, #Footer h5 a:hover,
+#Footer h6, #Footer h6 a, #Footer h6 a:hover,
+#Footer .Twitter ul li span {
+    color: #ffffff;
+}
+
+#Footer aside > h4 {
+    color: #fecd39;
+}
+
+#Footer .copyrights p {
+    color: #61727b;
+}
+
+#Footer .social li a {
+    background: #61727b;
+    color: #2c3e50 !important;
+}
+
+#Footer .social li a:hover {
+    background: #fecd39;
+    color: #ffffff !important;
+}
+
+.get_in_touch {
+    background-color:#FECD39;
+}
+#Top_bar .social li a {
+    background: #2C3E50 !important;
+}
+#Top_bar .phone i {
+    color: #2C3E50 !important;
+}
+#Footer, #Footer .Recent_posts ul li .desc p, #Footer .Recent_comments ul li p.author, #Footer .Twitter ul li > a {
+    border-top: 5px solid #FECD39;
+}
+#Footer .copyrights p {
+    color: #FECD39;
+}

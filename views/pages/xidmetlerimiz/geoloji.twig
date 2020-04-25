@@ -1,0 +1,54 @@
+{% extends 'index.twig' %}
+{% block pagetitle %}MÜHƏNDİS-GEOLOJİ AXTARIŞ İŞLƏRİ{% endblock %}
+
+{% block content %}
+    <div id="Wrapper">
+        <div id="Content">
+            <div class="container">
+                <div class="content">
+                    <div class="the_content the_content_wrapper">
+                        <h2>{{ data.pagetitle }}</h2>
+                        {{ data.pagetext |raw }}
+                    </div>
+                </div>
+
+                <div class="four columns">
+                    <div class="widget-area clearfix">
+                        <aside id="widget_mfn_menu-3" class="widget widget_mfn_menu">
+                            <ul class="menu">
+                                <li class="page_item
+                                    {% if is_current_path('geodeziya-isleri') %} current_page_item {% endif %}">
+                                    <a href="{{ path_for('geodeziya-isleri') }}">MÜHƏNDİS-GEODEZİYA İŞLƏRİ
+                                        <i class="icon-angle-right"></i></a>
+                                </li>
+                                <li class="page_item
+                                    {% if is_current_path('geoloji-ishler') %} current_page_item {% endif %}">
+                                    <a href="{{ path_for('geoloji-ishler') }}">MÜHƏNDİS-GEOLOJİ AXTARIŞ İŞLƏRİ
+                                        <i class="icon-angle-right"></i></a>
+                                </li>
+                                <li class="page_item
+                                    {% if is_current_path('hidrogeoloji-ishler') %} current_page_item {% endif %} last">
+                                    <a href="{{ path_for('hidrogeoloji-ishler') }}">MÜHƏNDİS-HİDROGEOLOJİ AXTARIŞ İŞLƏRİ
+                                        <i class="icon-angle-right"></i></a>
+                                </li>
+
+                                <li class="page_item
+                                    {% if is_current_path('geofiziki-isler') %} current_page_item {% endif %} last">
+                                    <a href="{{ path_for('geofiziki-isler') }}">GEOFİZİKİ İŞLƏR
+                                        <i class="icon-angle-right"></i></a>
+                                </li>
+
+                                <li class="page_item
+                                    {% if is_current_path('qruntlar') %} current_page_item {% endif %} last">
+                                    <a href="{{ path_for('qruntlar') }}">QRUNTLARIN LABORATORİYA TƏDQİQATLARI
+                                        <i class="icon-angle-right"></i></a>
+                                </li>
+                            </ul>
+                        </aside>
+                        <div class="widget-area-bottom"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

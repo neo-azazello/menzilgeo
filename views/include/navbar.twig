@@ -1,0 +1,67 @@
+<header id="Header">
+    <div class="container">
+        <div class="sixteen columns">
+
+            <h1>
+                <a id="logo" href="{{ base_url() }}" title="MƏNZİL kiçik müəssisəsi">
+                    <img src="{{ base_url() }}/assets/images/logo.png" alt="MƏNZİL kiçik müəssisəsi"/>
+                </a>
+            </h1>
+
+            <nav id="menu" class="menu-main-menu-container">
+                <ul id="menu-main-menu" class="menu">
+
+                    <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item">
+                        <a href="{{ path_for('home') }}">ANA SƏHİFƏ</a>
+                    </li>
+
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                        <a href="#">ŞİRKƏT HAQQINDA</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type ">
+                                <a href="{{ path_for('shirket') }}">ŞİRKƏT HAQQINDA</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type">
+                                <a href="{{ path_for('ustunluklerimiz') }}">ÜSTÜNLÜKLƏRİMİZ</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type ">
+                                <a href="{{ path_for('lisenziya') }}">LİSENZİYALARIMIZ</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                        <a href="#">XİDMƏTLƏRİMİZ</a>
+                        <ul class="sub-menu">
+                            <li class="menu-item menu-item-type-post_type ">
+                                <a href="{{ path_for('geodeziya-isleri') }}">MÜHƏNDİS-GEODEZİYA İŞLƏRİ</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type ">
+                                <a href="{{ path_for('geoloji-ishler') }}">MÜHƏNDİS-GEOLOJİ AXTARIŞ İŞLƏRİ</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type ">
+                                <a href="{{ path_for('hidrogeoloji-ishler') }}">MÜHƏNDİS-HİDROGEOLOJİ AXTARIŞ İŞLƏRİ</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type ">
+                                <a href="{{ path_for('geofiziki-isler') }}">GEOFİZİKİ İŞLƏR</a>
+                            </li>
+                            <li class="menu-item menu-item-type-post_type ">
+                                <a href="{{ path_for('qruntlar') }}">QRUNTLARIN LABORATORİYA TƏDQİQATLARI</a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="menu-item menu-item-type-post_type">
+                        <a href="{{ path_for('layihelerimiz') }}">LAYİHƏLƏRİMİZ</a>
+                    </li>
+
+                    <li class="menu-item menu-item-type-post_type ">
+                        <a href="{{ path_for('elaqe') }}">BİZİMLƏ ƏLAQƏ</a>
+                    </li>
+                </ul>
+            </nav>
+            <a class="responsive-menu-toggle" href="#"><i class="icon-reorder"></i></a>
+
+        </div>
+    </div>
+</header>
