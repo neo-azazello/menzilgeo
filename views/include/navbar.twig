@@ -11,11 +11,12 @@
             <nav id="menu" class="menu-main-menu-container">
                 <ul id="menu-main-menu" class="menu">
 
-                    <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item">
+                    <li class="menu-item {% if is_current_path('home') %} current-menu-item {% endif %}">
                         <a href="{{ path_for('home') }}">ANA SƏHİFƏ</a>
                     </li>
 
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <li class="menu-item menu-item-has-children
+                        {% if is_current_path('shirket') or is_current_path('ustunluklerimiz') or is_current_path('lisenziya') %}current-menu-item {% endif %}">
                         <a href="#">ŞİRKƏT HAQQINDA</a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-post_type ">
@@ -30,7 +31,8 @@
                         </ul>
                     </li>
 
-                    <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children">
+                    <li class="menu-item menu-item-has-children
+                        {% if is_current_path('geodeziya-isleri') or is_current_path('geoloji-ishler') or is_current_path('hidrogeoloji-ishler') or is_current_path('geofiziki-isler') or is_current_path('qruntlar') %}current-menu-item {% endif %}">
                         <a href="#">XİDMƏTLƏRİMİZ</a>
                         <ul class="sub-menu">
                             <li class="menu-item menu-item-type-post_type ">
@@ -51,11 +53,11 @@
                         </ul>
                     </li>
 
-                    <li class="menu-item menu-item-type-post_type">
+                    <li class="menu-item {% if is_current_path('layihelerimiz') %}current-menu-item {% endif %}">
                         <a href="{{ path_for('layihelerimiz') }}">LAYİHƏLƏRİMİZ</a>
                     </li>
 
-                    <li class="menu-item menu-item-type-post_type ">
+                    <li class="menu-item {% if is_current_path('elaqe') %}current-menu-item {% endif %} ">
                         <a href="{{ path_for('elaqe') }}">BİZİMLƏ ƏLAQƏ</a>
                     </li>
                 </ul>

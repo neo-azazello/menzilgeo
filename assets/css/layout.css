@@ -1,12 +1,12 @@
 /* #Global
 ================================================== */
-
-body {
-}
-
 #Wrapper {
     width: 1200px;
     margin: 0px auto 20px;
+}
+
+#Footer {
+
 }
 
 .layout-full-width {
@@ -265,6 +265,11 @@ a:hover.button-more {
     width: 900px;
     display: inline;
     float: right;
+    border-top: 5px solid #FECD39;
+}
+
+.border-line-yellow {
+    border-top: 5px solid #FECD39
 }
 
 .with_aside #Content .content {
