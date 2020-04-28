@@ -1,0 +1,27 @@
+    <script src="{{base_url()}}/assets/admin/vendor/jquery-3.2.1.min.js"></script>
+    <script src="{{base_url()}}/assets/admin/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="{{base_url()}}/assets/admin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <script src="{{base_url()}}/assets/admin/vendor/wow/wow.min.js"></script>
+    <script src="{{base_url()}}/assets/admin/vendor/animsition/animsition.min.js"></script>
+    <script src="{{base_url()}}/assets/admin/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="{{base_url()}}/assets/admin/summernote/summernote-bs4.js"></script>
+    <script src="{{base_url()}}/assets/admin/js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.summernote').summernote({
+                tabsize: 2,
+                height: 350,
+                dialogsInBody: true,
+                toolbar: [
+                    ['style', ['bold', 'italic', 'underline', 'clear']],
+                    ['font', ['strikethrough', 'superscript', 'subscript']],
+                    ['fontsize', ['fontsize']],
+                    ['color', ['color']],
+                    ['para', ['ul', 'ol', 'paragraph']],
+                    ['height', ['height']]
+                ]
+            });
+        });
+    </script>
+</body>
+</html>

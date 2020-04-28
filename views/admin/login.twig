@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <title>AdminPanel</title>
+
+    <link href="{{base_url}}/assets/admin/css/font-face.css" rel="stylesheet" media="all">
+    <link href="{{base_url}}/assets/admin/vendor/bootstrap-4.1/bootstrap.min.css" rel="stylesheet" media="all">
+    <link href="{{base_url}}/assets/admin/vendor/animsition/animsition.min.css" rel="stylesheet" media="all">
+    <link href="{{base_url}}/assets/admin/vendor/wow/animate.css" rel="stylesheet" media="all">
+    <link href="{{base_url}}/assets/admin/vendor/perfect-scrollbar/perfect-scrollbar.css" rel="stylesheet" media="all">
+    <link href="{{base_url}}/assets/admin/css/theme.css" rel="stylesheet" media="all">
+
+</head>
+
+<body class="animsition">
+    <div class="page-wrapper">
+        <div class="page-content--bge5">
+            <div class="container">
+                <div class="login-wrap">
+                    <div class="login-content">
+                        <div class="login-logo">
+                            <a href="#">
+                                <img src="{{base_url}}/assets/images/logo.png" alt="Tarana Arif">
+                            </a>
+                        </div>
+
+                        <div class="login-form">
+                            <form action="{{path_for('admin.login')}}" method="post">
+                                
+                                <div class="form-group">
+                                    <label>İstifadəçi adı</label>
+                                    <input class="au-input au-input--full" 
+                                           type="text" 
+                                           name="username" 
+                                           required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label>Şifrə</label>
+                                    <input class="au-input au-input--full" 
+                                           type="password" 
+                                           name="userpassword" 
+                                           required>
+                                </div>
+
+                                <button class="au-btn au-btn--block au-btn--green m-b-20" type="submit">Panelə giriş</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="{{base_url}}/assets/admin/vendor/jquery-3.2.1.min.js"></script>
+    <script src="{{base_url}}/assets/admin/vendor/bootstrap-4.1/popper.min.js"></script>
+    <script src="{{base_url}}/assets/admin/vendor/bootstrap-4.1/bootstrap.min.js"></script>
+    <script src="{{base_url}}/assets/admin/vendor/animsition/animsition.min.js"></script>
+    <script src="{{base_url}}/assets/admin/vendor/bootstrap-progressbar/bootstrap-progressbar.min.js">
+    </script>
+    <script src="{{base_url}}/assets/admin/vendor/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="{{base_url}}/assets/admin/js/main.js"></script>
+
+</body>
+</html>

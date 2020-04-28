@@ -1,0 +1,75 @@
+{% include 'admin/inc/header.twig' %}
+    <div class="page-wrapper">
+        {% include 'admin/inc/navigation.twig' %}    
+        {% include 'admin/inc/sidebar.twig' %}
+
+        <div class="page-container">
+ 
+            <header class="header-desktop">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+                        <div class="header-wrap">
+
+                            <div class="header-button">
+
+                                <div class="account-wrap">
+                                    <div class="account-item clearfix js-item-menu">
+                                        <div class="content">
+                                            <a href="{{path_for('auth.signout')}}">Выйти из системы</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+
+            <div class="main-content">
+                <div class="section__content section__content--p30">
+                    <div class="container-fluid">
+
+                        {% block admincontent %} {% endblock %}
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright">
+                                    <p>Copyright © 2016 - {{ "now"|date("Y") }} {{'MƏNZİL kiçik müəssisəsi.'}}</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div id="modalEdit"></div>
+            
+            {# delete Modal #}
+            <div class="modal fade" id="confirm-delete" tabindex="-1" style="z-index:9999;"role="dialog" data-keyboard="false"  data-backdrop="static" aria-hidden="true">
+                <div class="modal-dialog modal-md" role="document">
+                    <div class="modal-content">
+                    
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="showIconLabel">Удалить картинку</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                    
+                        <div class="modal-body">
+                            <p>Вы уверены что хотите удалить картинку?</p>
+                        </div>
+                        
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button>
+                            <a class="btn btn-danger btn-ok" style="color:#fff;">Да, удалить!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+{% include 'admin/inc/footer.twig' %}
