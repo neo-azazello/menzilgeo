@@ -40,8 +40,12 @@
                                 <p>050 2118365 və 012 5611437 </p></li>
                             <li class="mail"><i class="icon-envelope"></i>
                                 <p>
-                                    <a href="mailto:info@menzilgeo.az, 000-2011-00@mail.ru">info@menzilgeo.az,
-                                        000-2011-00@mail.ru</a></p></li>
+                                    <a href="mailto:info@menzilgeo.az, 000-2011-00@mail.ru">
+                                        info@menzilgeo.az,<br>
+                                        000-2011-00@mail.ru
+                                    </a>
+                                </p>
+                            </li>
                             <li class="www">
                                 <i class="icon-globe"></i>
                                 <p><a href="http://www.menzilgeo.az/">www.menzilgeo.az</a>
@@ -52,25 +56,17 @@
                 <div class="column two-third">
                     <div class="inner-padding"><h3>BİZƏ YAZIN</h3>
                         <div class="contact_form">
-                            <form id="json_contact_form" method="POST" action="">
-                                <input type="hidden" name="mfn_contact_nonce" value="96c2177643">
-                                <input type="hidden" name="To" value="000-2011-00@mail.ru">
-                                <fieldset>
-                                    <input id="Name" class="nick required" name="Name" placeholder="Adınız"
-                                           type="text">
-                                    <input id="Email" class="email required" name="Email"
-                                           placeholder="E-poçtunuz" type="text">
-                                    <input
-                                            id="Subject" class="subject" name="Subject" placeholder="Mövzu" type="text">
-                                    <textarea
-                                            id="Message" name="Message" class="required"></textarea>
-                                    <input type="submit" value="Göndər">
-                                </fieldset>
+                            <form method="post" action="{{ path_for('emailsend') }}" autocomplete="off">
+                                <input type="text" class="nick" name="name" placeholder="Adınız" required>
+                                <input type="text" class="email" name="email" placeholder="E-poçtunuz" required>
+                                <input type="text" class="subject" name="subject" placeholder="Mövzu" required>
+                                <textarea name="comments"
+                                          class="required"
+                                          placeholder="Mətni daxil edin"
+                                          required></textarea>
+                                <input type="submit" value="Göndər">
                             </form>
                             <div class="alert_success" style="display:none;">Təşəkkür edirik. Məktubunuz göndərildi
-                            </div>
-                            <div class="alert_error" style="display:none;">Məktubunuz göndərilmədi. Xahiş edirik bir
-                                daha yoxlayın
                             </div>
                         </div>
                     </div>

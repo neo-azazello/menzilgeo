@@ -45,8 +45,23 @@ class AdminController extends BaseController
         return $response->withRedirect($this->router->pathFor("posts"));
     }
 
-    public function deletePost(Request $request, Response $response)
-    {
 
+    public function sendEmail(Request $request, Response $response)
+    {
+        $sendername = $request->getParam('name');
+        $senderemail = $request->getParam('email');
+        $sendersubject = $request->getParam('subject');
+        $sendermessage = $request->getParam('comments');
+
+        $to = '000-2011-00@mail.ru';
+        $subject = $sendersubject;
+        $message = 'Имя отправителя: ' . $sendername . "\r\n" . 'Почта отправителя: ' . $senderemail . "\r\n" . "\r\n" . 'Сообщение: ' . "\r\n" . $sendermessage;
+
+        $headers = 'From: no-reply@menzilgeo.az' . "\r\n" .
+            'Reply-To: no-reply@menzilgeo.az' . "\r\n" .
+            'X-Mailer: PHP/' . phpversion();
+
+        mail($to, $subject, $message, $headers);
+        return $response->withRedirect($this->router->pathFor('elaqe'));
     }
 }
