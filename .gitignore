@@ -1,4 +1,5 @@
 /config
 /uploads
+.well-known
 .htaccess
 .idea
